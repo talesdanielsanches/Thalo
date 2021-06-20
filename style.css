@@ -30,7 +30,8 @@ h2 {
 }
 
 .container {
-  width: 1420px;
+  width: 100%;
+  max-width: 1420px;
   margin: 0 auto;
   padding: 0;
   position: relative;
@@ -108,26 +109,26 @@ h2 {
   color: #cccccc;
 }
 
-.btn ul li a::before {
+.btn-personal::after {
   content: "";
   width: 404px;
   height: 70px;
   display: block;
   background: url(./img/layout-page/rectangle-btn-color.svg) no-repeat center;
   position: absolute;
-  top: 55px;
-  left: 280px;
+  top: 25px;
+  left: 285px;
 }
 
-.btn ul li a::after {
+.btn-professional::after {
   content: "";
   width: 404px;
   height: 70px;
   display: block;
   background: url(./img/layout-page/rectangle-btn-color.svg) no-repeat center;
   position: absolute;
-  top: 55px;
-  left: 720px;
+  top: 25px;
+  left: 730px;
 }
 
 .redes {
@@ -138,7 +139,7 @@ h2 {
 .redes ul li {
   list-style: none;
   display: inline-block;
-  padding: 0 2.5%;
+  padding: 0 4%;
 }
 
 .redes a img {
@@ -158,126 +159,461 @@ h2 {
 .img2 {
   width: 300px;
   top: 400px;
-  left: 1200px;
+  left: 87%;
 }
 
 .img3 {
-  width: 200px;
+  width: 180px;
   top: 750px;
-  left: 50px;
+  left: 10%;
 }
 
-@media screen and (max-width: 1480px) {
-  .w50 {
-    padding: 0;
+@media screen and (max-width: 1550px) {
+  .img1 {
+    left: -300px;
+  }
+
+  .img2 {
+    left: 85%;
+  }
+
+  .img3 {
+    left: 10%;
   }
 }
 
-@media screen and (max-width: 1280px) {
-  .center {
-    padding: 0;
+@media screen and (max-width: 1415px) {
+  p,
+  h1,
+  h2 {
+    max-width: 800px;
+    margin: 0 10%;
   }
 
-  .tittle {
-    padding: 60px 10%;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .w50 {
+  .container {
     width: 100%;
-    padding: 0 10%;
   }
 
-  .about-me {
-    height: 500px;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  .w50 {
-    padding: 0;
-  }
-
-  .my-name {
-    padding-bottom: 50px;
-  }
-
-  .my-presentation1,
-  .my-presentation2 {
-    padding: 0 10%;
+  .center {
+    width: 75%;
   }
 
   .my-presentation1 {
-    padding-bottom: 40px;
+    padding: 70px 10%;
+    margin: 0 10%;
+    max-width: 800px;
   }
 
-  .my-presentation2 {
-    padding-bottom: 90px;
+  .btn {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
   }
 
-  .about-me {
-    height: 530px;
+  .btn ul {
+    margin: 0 auto;
+  }
+
+  .btn ul li {
+    padding: 20px 20%;
+  }
+
+  .btn-personal::after {
+    top: 32px;
+    left: 31.5%;
+  }
+
+  .btn-professional::after {
+    top: 128px;
+    left: 31.5%;
+  }
+
+  .img1 {
+    left: -350px;
+  }
+
+  .img3 {
+    left: 10%;
   }
 }
 
-@media screen and (max-width: 757px) {
-  .about-me {
-    height: 550px;
+@media screen and (max-width: 1310px) {
+  .btn ul li a {
+    padding: 20px 5%;
   }
 
-  .tittle h1 {
-    max-width: 390px;
+  .btn-personal::after {
+    top: 32px;
+    left: 30%;
   }
 
-  .tittle h1::after {
-    top: 35px;
-    left: 1%;
+  .btn-professional::after {
+    top: 128px;
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .presentation h1 {
+    padding: 15% 0 15px 0;
+    line-height: 70px;
+  }
+
+  .my-presentation1 {
+    padding: 50px 1%;
+  }
+
+  .presentation h2 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .my-presentation2 {
+    line-height: 12px;
+  }
+
+  .btn ul li {
+    display: block;
+    padding: 35px 0;
+  }
+
+  .btn-personal::after {
+    top: 45px;
+    left: 28%;
+  }
+
+  .btn-professional::after {
+    top: 143px;
+    left: 28%;
+  }
+
+  .redes {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .btn-personal::after {
+    top: 45px;
+    left: 27%;
+  }
+
+  .btn-professional::after {
+    top: 143px;
+    left: 27%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .btn ul li {
+    padding: 20px 0;
+  }
+
+  .btn ul li a {
+    font-size: 25px;
+  }
+
+  .btn-personal::after {
+    background: url(./img/layout-page/rectangle-btn-mobile-color.svg) no-repeat
+      center;
+    top: 30px;
+    left: 25%;
+  }
+
+  .btn-professional::after {
+    background: url(./img/layout-page/rectangle-btn-mobile-color.svg) no-repeat
+      center;
+    top: 96px;
+    left: 25%;
+  }
+
+  .presentation h1 {
+    padding: 25% 0 0 0;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .my-presentation1 {
+    font-size: 20px;
+    padding: 50px 1%;
+    line-height: 25px;
+  }
+
+  .presentation h2 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .my-presentation2 {
+    margin-top: 1%;
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .redes a img {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .btn-personal::after {
+    top: 30px;
+    left: 24%;
+  }
+
+  .btn-professional::after {
+    top: 96px;
+    left: 24%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .btn ul li {
+    padding: 20px 0;
+  }
+
+  .btn ul li a {
+    font-size: 20px;
+  }
+
+  .btn-personal::after {
+    top: 28px;
+    left: 23%;
+  }
+
+  .btn-professional::after {
+    top: 93px;
+    left: 23%;
+  }
+
+  .img1 {
+    left: -375px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .btn-personal::after {
+    left: 22%;
+  }
+
+  .btn-professional::after {
+    left: 21%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .btn-personal::after {
+    left: 20%;
+  }
+
+  .btn-professional::after {
+    left: 20%;
+  }
+
+  .img1 {
+    left: -400px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .btn-personal::after {
+    left: 18%;
+  }
+
+  .btn-professional::after {
+    left: 18%;
+  }
+
+  .img1 {
+    width: 50%;
+    left: -200px;
+  }
+
+  .img2 {
+    width: 25%;
+  }
+
+  .img3 {
+    width: 20%;
+    top: 750px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .btn-personal::after {
+    left: 16%;
+  }
+
+  .btn-professional::after {
+    left: 16%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .btn-personal::after {
+    left: 14%;
+  }
+
+  .btn-professional::after {
+    left: 14%;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .desktop ul {
-    max-width: 100%;
-    margin: 0 10%;
+  .btn-personal::after {
+    left: 12%;
+  }
+
+  .btn-professional::after {
+    left: 12%;
   }
 }
 
-@media screen and (max-width: 610px) {
-  .desktop ul {
-    margin: 0;
+@media screen and (max-width: 670px) {
+  .btn-personal::after {
+    left: 10%;
+  }
+
+  .btn-professional::after {
+    left: 10%;
+  }
+
+  .img1 {
+    left: -200px;
   }
 }
 
-@media screen and (max-width: 512px) {
-  .desktop ul {
+@media screen and (max-width: 620px) {
+  .btn-personal::after {
+    left: 30px;
+  }
+
+  .btn-professional::after {
+    left: 30px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .btn-personal::after {
+    left: 15px;
+  }
+
+  .btn-professional::after {
+    left: 15px;
+  }
+
+  .img1 {
+    left: -150px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .btn-personal::after {
+    left: 5px;
+  }
+
+  .btn-professional::after {
+    left: 5px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .btn-personal::after {
+    left: 0;
+  }
+
+  .btn-professional::after {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
     width: 100%;
-  }
-
-  .center {
     margin: 0;
   }
 
-  .desktop {
-    margin: 0 auto;
-  }
-
-  .tittle {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 397px) {
-  .tittle h1::after {
-    top: 45px;
-  }
-
   .center {
-    margin: 0;
+    width: 100%;
+    margin: 0 auto;
   }
 
-  .tittle {
-    margin: 0 auto;
+  .presentation h1 {
+    padding: 25% 0 0 0;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .my-presentation1 {
+    font-size: 16px;
+    padding: 50px 1%;
+    line-height: 20px;
+  }
+
+  .presentation h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .my-presentation2 {
+    margin-top: 1%;
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .btn {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .btn ul li {
+    display: inline-block;
+    padding: 25px 20% 15px 20%;
+  }
+
+  .btn ul li a {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .btn-personal::after {
+    width: 100%;
+    top: 13px;
+    left: 4px;
+  }
+
+  .btn-professional::after {
+    width: 100%;
+    top: 79px;
+    left: 1px;
+  }
+
+  .redes {
+    padding: 20px 0;
+  }
+
+  .redes ul li {
+    padding: 0 5%;
+  }
+
+  .redes a img {
+    width: 30px;
+  }
+
+  .img1 {
+    width: 250px;
+    left: -145px;
+    top: -95px;
+  }
+
+  .img2 {
+    width: 150px;
+    left: 300px;
+    top: 280px;
+  }
+
+  .img3 {
+    width: 120px;
+    top: 670px;
   }
 }
